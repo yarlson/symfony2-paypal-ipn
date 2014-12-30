@@ -108,6 +108,10 @@ class Ipn
         $this->clsIpnOrders = $ipnOrders;
         $this->clsIpnOrderItems = $ipnOrderItems;
     }
+	public function setEmail($email)
+	{
+		$this->merchantEmail=$email;
+	}
 
     /**
      * The key functionality in this library. Extracts the fields from the IPN notification and then
